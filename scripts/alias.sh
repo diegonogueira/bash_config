@@ -1,0 +1,6 @@
+alias ll="ls -Glahs"
+alias ls="/bin/ls -G"
+alias psgrep="ps aux | egrep -v egrep | egrep"
+alias edit="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias gka="gitk --all 2> /dev/null &"
+alias gk="gitk 2> /dev/null &"
