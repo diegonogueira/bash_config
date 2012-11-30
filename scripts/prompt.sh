@@ -82,9 +82,9 @@ configure_prompt () {
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
 
-    PS1="\n${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR} ${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR}\n\$ "
+    PS1="\n\u@\h => ${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR} ${PROMPT_COLOR}(${BRANCH})${NO_COLOR}${STATE}${NO_COLOR}\n\$ "
   else
-    PS1="\n${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR}\n\$ "
+    PS1="\n\u@\h => ${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR}\n\$ "
   fi
 }
 
