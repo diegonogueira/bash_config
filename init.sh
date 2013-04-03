@@ -6,3 +6,5 @@ source $HOME/.bash.d/scripts/git_completion.sh
 source $HOME/.bash.d/scripts/utils.sh
 source $HOME/.bash.d/scripts/prompt.sh
 source $HOME/.bash.d/scripts/railroad.sh
+source $HOME/.bash.d/scripts/path.sh
+source $HOME/.bash.d/scripts/secret.sh

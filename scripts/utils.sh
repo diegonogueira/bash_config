@@ -1,7 +1,7 @@
 # reload source
 reload() {
   source ~/.bash_profile;
-  rbenv rehash;
+  rvm reload;
   clear;
 }
 
