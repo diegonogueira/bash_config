@@ -49,7 +49,7 @@ configure_prompt () {
     local RAILS_PROMPT=" on rails ${RAILS_VERSION}"
   fi
 
-  RUBY_PROMPT="${GREEN}[ ruby ${RUBY_VERSION}${RAILS_PROMPT} ]${NO_COLOR} "
+  RUBY_PROMPT="${GRAY}[ ruby ${RUBY_VERSION}${RAILS_PROMPT} ]${NO_COLOR} "
 
   if [ "$STATUS" != "" ]; then
     if [[ "$STATUS" =~ "$CHANGES_NOT_STAGED" ]]; then
@@ -82,9 +82,9 @@ configure_prompt () {
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
 
-    PS1="\n\u@\h => ${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR} ${PROMPT_COLOR}(${BRANCH})${NO_COLOR}${STATE}${NO_COLOR}\n\$ "
+    PS1="\n\u: ${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR} ${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR}\n\$ "
   else
-    PS1="\n\u@\h => ${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR}\n\$ "
+    PS1="\n\u: ${RUBY_PROMPT}${BASE_COLOR}\w${NO_COLOR}\n\$ "
   fi
 }
 
